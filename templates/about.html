@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us | CarTalk.com{% endblock title %}
+
+{% block body %}
+<!--About Us-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_col_1">
+                {% load static%}
+                <img src="{% static 'images/logos/CarTalk-logos-2.jpeg' %}" alt="CarTalk_logo">
+            </div>
+            <div class="about_col_2">
+                <h1 class="sub_title">About Us</h1>
+                <p>CarTalk was founded in 2022 as a website dedicated to Gasoline Culture and all it entails, We write about modern cars, classic cars, motorcycles, racing, gear, gadgets, etc.</p>
+                <p>CarTalk offers the latest in the automotive industry for any car enthusiast to enjoy. Stay up to date with our car news section, where you can find out the latest facts about your favorite brands. Heard about any convention?</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'images/CarTalk_icon.png'%}">
+    <script src="https://kit.fontawesome.com/ef005ac5af.js" crossorigin="anonymous"></script>
+    <title> {% block title %}{% endblock title %}</title>
+</head>
+<body>
+<!--Header-->
+<div id='nav_bar'>
+    <div class="container">
+        <nav>
+            {% load static %}
+            <a href="/"><img src="{%static 'images/logos/CarTalk-logo.png'%}" class="logo" alt="CarTalk_logo"></a>
+            <ul id="sidemenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cars">Car</a></li>
+                <li><a href="/bikes">Bike</a></li>
+                <li><a href="/reviews">Reviews</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div> 
+{% block body %}
+
+{% endblock body %}
+
+<!--Copyright-->
+<div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> CarTalk. Made with love <i class="fa-regular fa-heart"></i></p>
+</div>
+
+<!--Scripts-->
+{%load static%}
+<script src="{%static 'javascript.js'%}"></script>
+
+</body>
+</html>

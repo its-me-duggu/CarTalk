@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}CarTalk | It`s all about Cars & Bikes.{% endblock title %}
+
+{% block body %}
+<div id='header'>
+    <div class='container'>
+        <div class="header_text">
+            <p>Welcome to</p>
+            <h1><span>CarTalk,</span> <br>It`s all about Cars & Bikes.</h1>
+        </div>
+    </div>
+</div>
+<!--Latest News-->
+<div id="latest_news">
+    <div class="container">
+        <h1 class="sub_title">Latest News:</h1>
+        <div class="section_list">
+            <div>
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Cars</h2>
+                <p>CarTalk offers the latest in the automotive industry for any car enthusiast to enjoy.</p>
+                <a href="">Know More!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-motorcycle"></i>
+                <h2>Bikes</h2>
+                <p>CarTalk offers the latest in the automotive industry for any car enthusiast to enjoy.</p>
+                <a href="">Know More!</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-newspaper"></i>
+                <h2>News</h2>
+                <p>CarTalk offers the latest in the automotive industry for any car enthusiast to enjoy.</p>
+                <a href="">Know More!</a>
+            </div>
+        </div>
+        <a href="/news" class="btn">See more</a>
+    </div>
+</div>
+<!--Reviews-->
+<div id="reviwes">
+    <div class="container">
+        <h1 class="sub_title">Reviews:</h1>
+        <div class="reviwes_list">
+            <div class="reviwes">
+                {% load static%}
+                <img src="{% static 'images/wallpaper_1.jpg'%}" alt="wallpaper_1">
+                <div class="layer">
+                    <h2>Cars Reviwes</h2>
+                    <p>Read the newest in-depth car reviews written by experts at CarTalk. Find out the full details of the latest cars in the Indian market.</p>
+                    <a href="/cars"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="reviwes">
+                {% load static%}
+                <img src="{% static 'images/wallpaper_2.jpg' %}" alt="wallpaper_2">
+                <div class="layer">
+                    <h2>Bikes Reviwes</h2>
+                    <p>Read the newest in-depth bike reviews written by experts at CarTalk. Find out the full details of the latest bikes in the Indian market.</p>
+                    <a href="/bikes"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="reviwes">
+                {% load static%}
+                <img src="{% static 'images/wallpaper_1.jpg'%}" alt="wallpaper_1">
+                <div class="layer">
+                    <h2>Cars Reviwes</h2>
+                    <p>Read the newest in-depth car reviews written by experts at CarTalk. Find out the full details of the latest cars in the Indian market.</p>
+                    <a href="/cars"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="/reviews" class="btn">See more</a>
+    </div>
+</div>
+{% endblock body %}
